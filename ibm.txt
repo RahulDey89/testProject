@@ -1,0 +1,6 @@
+ibm odm links
+
+
+1.https://www.ibm.com/support/knowledgecenter/SSQP76_8.6.0/com.ibm.odm.rules.embedded.installconfig/topics/tsk_rules_embedded_install_alone.html
+
+2.https://www.ibm.com/support/knowledgecenter/SSQP76_8.6.0/com.ibm.odm.distrib.config.designer/config_ds_designer/tsk_designer_install.html
