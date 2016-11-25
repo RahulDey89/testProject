@@ -1,6 +1,11 @@
 # testProject
 fiddling around 
 
+Pom example 
+    
+https://svn.apache.org/viewvc/maven/pom/tags/maven-parent-26/pom.xml?view=markup#l1069
+
+
 ODM tutorial-
 #
 http://www.ibm.com/support/knowledgecenter/SSQPJS_8.0.0/com.ibm.wodm.family.overview/understandinstall_topics/tpc_odm_composition.html
