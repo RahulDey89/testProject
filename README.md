@@ -1,3 +1,6 @@
+
+
+
 # testProject
 fiddling around 
 
@@ -30,36 +33,30 @@ for javascript from submit
 
 	var xhr = new XMLHttpRequest();
 
-	  var fr = document.getElementById('form1');
+	   var fr = 'param='+document.getElementById('survey-canvas').innerHTML;
 
-	  var fd = new FormData();
+        var fd = new FormData();
 
-	  fd.append("author", "itest");
+        fd.append("author", "itest");
 
-	  fd.append("name", "test data");
+        fd.append("form", fr);
 
-	  var t = document.getElementById('fileToUpload');
-
-	  fd.append("fileToUpload", document.getElementById('fileToUpload').files[i]);
-
-	  /* event listners */
-
-	  xhr.upload.addEventListener("progress_0", uploadProgress, false);
-
-	  xhr.upload.addEventListener("progress_0", progressHandlingFunction, false);
-
-	  xhr.addEventListener("load", uploadComplete, false);
-
-	  xhr.addEventListener("error", uploadFailed, false);
-
-	  xhr.addEventListener("abort", uploadCanceled, false);
-
-	  /* Be sure to change the url below to the url of your upload server side script */
-
-	  xhr.open("POST", "excelFileUpload.htm");
-
-	  xhr.send(fd);
+        xhr.open("POST", "frmsubmit");
+		
+        xhr.send(fr);	 -- xhr.send(fd);
 
 		}
+
+#### get param
+	BufferedReader reader = null;
+		try {
+			reader = httpServletRequest.getReader();
+		
+	   
+	    while ((str = reader.readLine()) != null)
+	    {
+	        System.out.println(str);
+	        html = str;
+	    }
 
 	}
